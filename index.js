@@ -9,7 +9,7 @@ const HOST = process.env.HOST || "0.0.0.0";
 // App
 const app = express();
 app.get("/", (req, res) => {
-  res.send("Hello World From Branch feature/eb-branch-test");
+  res.send(`Welcome to ${process.env.APPNAME}`);
 });
 
 app.listen(PORT, HOST);
